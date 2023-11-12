@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="">
+            <h1><span>FIQ</span>UR<span></span></h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="{% url 'index' %}" data-after="Home">Home</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#services" data-after="Service">Skils</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>TAUFIQURROHMAN <span></span></h1>
+        <a href="#about" type="button" class="cta">My About</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'image/taufiq.jpg' %}" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <p>Saya seorang profesional Developer dan saya adalah mahasiswa . Keahlian saya bisa membuat website berbasis framework django python, dan saya memiliki track record . Saya mempunyai kemampuan berkolaborasi ,leadership ,bisa berkomunikasi dengan baik serta komitmen untuk mencapai hasil terbaik.</p>
+        <h2>Pendidikan Formal</h2>
+        <p>S1 :  Universitas Islam Madura (proses) </p>
+        <a href="#projects" class="cta">Portofolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+  <!-- skill-->
+  <section id="services">
+    <div class="services-container">
+      <div class="service-top">
+        <h1 class="section-title">Sk<span>il</span>l</h1>
+        <p>Keterampilan saya mencakup HTML untuk membangun struktur halaman web, CSS untuk merancang tampilan dan responsifitas, JavaScript untuk menambahkan interaktivitas dan dinamisme, serta Python untuk mengembangkan solusi perangkat lunak yang sederhana dan fleksibel. Saya siap mengaplikasikan kombinasi keterampilan ini untuk proyek-proyek yang memerlukan pemahaman mendalam tentang pengembangan web dan pemrograman umum.</p>
+      </div>
+      <div class="row"></div>
+      <section class="sub-title">
+        <h2>Programing Skills</h2>
+        <div class="skills-container">
+            <div class="skills">
+                <div class="subject">PYTHON </div>
+                <div class="progress-bar"value=50%>
+                    <div class="progress-line"style="max-width: 50%;"></div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="subject">HTML </div>
+                <div class="progress-bar"value=70%>
+                    <div class="progress-line"style="max-width: 70%;"></div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="subject">CSS </div>
+                <div class="progress-bar"value=65%>
+                    <div class="progress-line"style="max-width: 65%;"></div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="subject">JAVASCRIPT </div>
+                <div class="progress-bar"value=30%>
+                    <div class="progress-line"style="max-width: 30%;"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+      </section>
+    </div>
+  </section>
+  <!-- End skills -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project </h1>
+            <h2>Project Django</h2>
+            <p>Proyek saya adalah aplikasi berbasis Django Python, di mana saya menggabungkan keahlian HTML, CSS, dan JavaScript untuk menciptakan antarmuka web yang responsif dan menarik. Dengan backend yang kuat menggunakan Django, saya fokus pada pengembangan fitur-fitur yang memberikan pengalaman pengguna yang mulus dan efisien. Saya berkomitmen untuk memberikan solusi perangkat lunak yang handal dan sesuai dengan kebutuhan proyek.</p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'image/portofolio.png' %}" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/phone" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+6285947719207</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/gmail" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>taufiqurrohman250503@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/address" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>pamekasan,kadur,masaran</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <center><a href="{% url 'index' %}" type="button" class="cta">KEMBALI</a></center>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>T</span>aufiqurrohman</h1>
+      </div>
+      <h2>Click on my complete website</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://wa.me/6285947719207"><img src="https://img.icons8.com/whatsapp" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://instagram.com/ifiqurr_ft?igshid=ZGUzMzM3NWJiOQ=="><img src="https://img.icons8.com/instagram" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://tiktok.com/@ifiqurr_ft"><img src="https://img.icons8.com/tiktok" /></a>
+        </div>
+        <div class="social-item">
+          <a href="t.me/ifiqurr_ft"><img src="https://img.icons8.com/telegram" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2023 fiqur. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+{% endblock content %}
+
+{% block menu %}
+<a href="{% url 'index' %}">about</a>  
+{% endblock menu %}

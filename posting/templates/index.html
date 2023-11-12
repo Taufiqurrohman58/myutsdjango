@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<body>
+<header>
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="taufiqurrohman.jpg" class="fullscreen-bg__video">
+            <source src="{% static 'video/taufiqurrohman.mp4' %}" type="video/mp4">
+        </video>
+    </div>
+    <div class="text-video">
+        <h2>welcome</h2>
+        <h5>this is</h5>
+        <h1>my website</h1>
+        <p>I'm a <span id="element"> </span></p>
+        <p>Click the about button to know about me.</p>
+        <a href="{% url 'about' %}" type="button" class="cta">ABOUT</a>
+    </div>  
+</header>
+</body>
+{% endblock content%}
+
+{% block menu %}
+<a href="{% url 'about' %}">index</a>
+{% endblock menu %}
